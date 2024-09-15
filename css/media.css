@@ -1,0 +1,191 @@
+@media all and (max-width: 1200px){
+    .fixed-row {
+        max-width: 90%;
+    }
+    section#top-section .column-7{
+        padding-left: 5%;
+    }
+    h1.section-head {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    p.section-sub_head {
+        font-size: 30px;
+    }
+    ul.section-list li{
+        font-size: 18px;
+    }
+    ul.section-list span{
+        font-size: 22px;
+    }
+    #order-section .section-row {
+        flex-direction: column;
+    }
+    #order-section .section-row>div{
+        width: 80% !important;
+        margin: auto;
+    }
+
+    section:not(#top-section) div[class*="column"] img{
+        height: 400px;
+        width: 100%;
+    }
+    .list-item img {
+        height: 40px !important;
+    }
+    section:not(#top-section) div[class*="column"]:nth-child(2){
+        margin-bottom: 20px;
+    }
+    section#top-section>div {
+        flex-direction: column-reverse;
+    }
+    section#top-section>div>div{
+        width: 100% !important;
+    }
+    section#top-section .column-5 img {
+        max-height: 600px;
+        object-position: center;
+    }
+    section#top-section .column-5 {
+        position: relative;
+    }
+    section#top-section .column-5:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.6;
+        min-height: inherit !important;
+    }
+    header ul.menu-list {
+        justify-content: flex-end;
+    }
+    section#top-section .column-7 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    section#form-section .column-4 {
+        margin-bottom: 0 !important;
+    }
+    section:not(#top-section) div[class*="column"] .cover-image img {
+        position: absolute;
+        bottom: 0;
+        margin-top: 0 !important;
+        transform: none !important;
+    }
+    
+}
+@media all and (max-width: 991px){
+    section#form-section .fixed-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section#form-section div[class*="column"] {
+        width: 100% !important;
+    }
+    section:not(#top-section) div[class*="column"] .cover-image img{
+        height: 100%;
+    }
+    section#form-section .column-8 form{
+        padding: 40px 10% !important;
+    }
+}
+@media all and (min-width: 768px){
+    .mobile-btn{
+        display: none;
+    }
+}
+@media all and (max-width: 767px){
+    .mobile-btn{
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        float: right;
+        
+    }
+    .mobile-btn span{
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+        background: white;
+        height: 1px;
+    }
+
+    footer.flex>div>div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .middle-footer .fixed-row .footer-column:last-child {
+        text-align: center !important;
+        margin: 21px 0 !important;
+    }
+    .footer-column .btn{
+        float: none;
+    }
+    .fixed-row .footer-column:last-child{
+        text-align: center;
+    }
+    h1.heading {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    ul.footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    ul.menu-list {
+        display: none;
+    }
+    section#top-section .column-5 img{
+        min-height: 400px;
+    }
+    h1.section-head{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    p.section-sub_head{
+        font-size: 20px;
+    }
+    ul.section-list li {
+        font-size: 15px;
+    }
+    section#top-section .column-7 {
+        padding: 15px;
+    }
+    .list-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu.opened ul.menu-list {
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 7%;
+        max-width: 88%;
+        top: 48px;
+        padding: 15px 5%;
+        background: black;
+        text-align: right;
+
+    }
+    header.fixed .menu.opened ul.menu-list{
+        width: 100%;
+        right: 0;
+        max-width: none;
+    }
+    ul.menu-list {
+        transition: 1s linear;
+    }
+    header li.menu-item {
+        margin-bottom: 11px;
+    }
+}
